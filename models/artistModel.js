@@ -5,6 +5,10 @@ const artistSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  coverImage: {
+    type: String,
+    required: true,
+  },
 });
 
 const Artist = mongoose.model('Artist', artistSchema);

@@ -8,4 +8,9 @@ artistRouter
   .get(artistController.getAllArtists)
   .post(artistController.createArtist);
 
+artistRouter
+  .route('/:id')
+  .get(artistController.getArtist)
+  .patch(artistController.updateArtist);
+
 module.exports = artistRouter;
